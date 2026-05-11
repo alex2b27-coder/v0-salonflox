@@ -26,20 +26,15 @@ export function CTA() {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-medium text-primary-foreground text-balance">
               Ready to automate your salon?
             </h2>
-            <p className="mt-4 text-lg text-primary-foreground/70 max-w-2xl mx-auto">
+            <p className="mt-6 text-lg text-primary-foreground/70 max-w-2xl mx-auto">
               Fill out the salon onboarding form and get instant trial access. Start accepting bookings via Telegram today.
-            </p>
-
-            {/* Bottom tagline */}
-            <p className="mt-6 text-xl text-primary-foreground">
-              More bookings. Fewer no-shows. <span className="text-accent font-medium">Smarter business.</span>
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button 
                 size="lg" 
                 asChild 
-                className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90"
+                className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90 h-12 px-8"
               >
                 <Link href="/salon-questionnaire">
                   Start Free Trial
@@ -50,7 +45,7 @@ export function CTA() {
                 size="lg" 
                 variant="outline" 
                 asChild 
-                className="w-full sm:w-auto border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
+                className="w-full sm:w-auto border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 h-12 px-8"
               >
                 <Link href="https://t.me/bookvsflow" target="_blank" rel="noopener noreferrer">
                   Try Demo Bot

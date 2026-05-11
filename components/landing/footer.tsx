@@ -49,14 +49,6 @@ export function Footer() {
                 </svg>
                 <span className="text-primary-foreground/70">bookvsflow@gmail.com</span>
               </div>
-              <div className="flex items-center gap-2 text-sm">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-4 h-4 text-accent">
-                  <circle cx="12" cy="12" r="10"/>
-                  <line x1="2" y1="12" x2="22" y2="12"/>
-                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-                </svg>
-                <span className="text-primary-foreground/70">bookvsflow.com</span>
-              </div>
             </div>
           </div>
 
@@ -119,9 +111,6 @@ export function Footer() {
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-primary-foreground/50">
             © {new Date().getFullYear()} BookVSFlow. All rights reserved.
-          </p>
-          <p className="text-sm text-primary-foreground/50">
-            More bookings. Fewer no-shows. <span className="text-accent">Smarter business.</span>
           </p>
         </div>
       </div>
