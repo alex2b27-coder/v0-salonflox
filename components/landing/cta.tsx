@@ -19,7 +19,7 @@ export function CTA() {
         >
           {/* Large decorative logo */}
           <div className="absolute top-1/2 right-8 -translate-y-1/2 w-48 h-48 lg:w-64 lg:h-64 opacity-10 pointer-events-none">
-            <LogoIcon className="w-full h-full" variant="white" />
+            <LogoIcon className="w-full h-full" variant="light" />
           </div>
 
           <div className="relative z-10 max-w-3xl mx-auto">

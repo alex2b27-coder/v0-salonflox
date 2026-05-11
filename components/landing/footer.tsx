@@ -29,7 +29,7 @@ export function Footer() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <Link href="/">
-              <Logo size="sm" variant="white" />
+              <Logo size="sm" variant="light" />
             </Link>
             <p className="mt-4 text-sm text-primary-foreground/60 max-w-xs">
               Smart Booking System for Service Professionals. Telegram-first automation for modern salons.
