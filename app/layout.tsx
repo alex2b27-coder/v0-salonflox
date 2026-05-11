@@ -14,13 +14,13 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'BookVSFlow — Salon Booking on Autopilot',
-  description: 'Automate bookings, clients, reminders, payments and reports directly inside Telegram. The Telegram-first salon automation platform for beauty businesses.',
-  keywords: ['salon booking', 'telegram bot', 'beauty salon', 'appointment scheduling', 'salon management', 'barbershop', 'nail studio'],
-  authors: [{ name: 'BookVSFlow' }],
+  title: 'BookVSFlow — Smart Booking System for Service Professionals',
+  description: 'All-in-one booking solution for any type of service business. More bookings. Fewer no-shows. Smarter business.',
+  keywords: ['salon booking', 'telegram bot', 'beauty salon', 'appointment scheduling', 'salon management', 'barbershop', 'nail studio', 'massage booking', 'service business'],
+  authors: [{ name: 'BookVSFlow', url: 'https://bookvsflow.com' }],
   openGraph: {
-    title: 'BookVSFlow — Salon Booking on Autopilot',
-    description: 'Automate bookings, clients, reminders, payments and reports directly inside Telegram.',
+    title: 'BookVSFlow — Smart Booking System for Service Professionals',
+    description: 'All-in-one booking solution for any type of service business. More bookings. Fewer no-shows. Smarter business.',
     url: 'https://bookvsflow.com',
     siteName: 'BookVSFlow',
     type: 'website',
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'BookVSFlow — Salon Booking on Autopilot',
-    description: 'Automate bookings, clients, reminders, payments and reports directly inside Telegram.',
+    title: 'BookVSFlow — Smart Booking System for Service Professionals',
+    description: 'All-in-one booking solution for any type of service business. More bookings. Fewer no-shows. Smarter business.',
   },
   robots: {
     index: true,
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport = {
-  themeColor: '#f8f7f4',
+  themeColor: '#f5f5f0',
   width: 'device-width',
   initialScale: 1,
 }

@@ -32,7 +32,7 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-20 lg:py-32">
+    <section id="how-it-works" className="py-20 lg:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -52,7 +52,7 @@ export function HowItWorks() {
 
         <div className="relative">
           {/* Connection line */}
-          <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-border" />
+          <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-accent/20" />
 
           <div className="space-y-12 lg:space-y-0">
             {steps.map((step, index) => (
@@ -72,7 +72,7 @@ export function HowItWorks() {
                   }`}
                 >
                   <div className={`${index % 2 === 0 ? "lg:ml-auto" : ""} max-w-md`}>
-                    <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent text-accent-foreground font-bold text-sm mb-4">
+                    <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary text-primary-foreground font-bold text-sm mb-4">
                       {step.number}
                     </div>
                     <h3 className="text-xl font-semibold text-foreground mb-2">{step.title}</h3>

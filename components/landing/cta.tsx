@@ -3,39 +3,43 @@
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
+import { LogoIcon } from "@/components/brand/logo"
 import { ArrowRight } from "lucide-react"
 
 export function CTA() {
   return (
-    <section className="py-20 lg:py-32">
+    <section className="py-20 lg:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="relative bg-primary rounded-3xl p-8 sm:p-12 lg:p-16 text-center overflow-hidden"
+          className="relative bg-primary rounded-xl p-8 sm:p-12 lg:p-16 text-center overflow-hidden"
         >
-          {/* Background decoration */}
-          <div className="absolute inset-0 overflow-hidden">
-            <div className="absolute -top-20 -right-20 w-64 h-64 bg-accent/20 rounded-full blur-3xl" />
-            <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-accent/10 rounded-full blur-3xl" />
+          {/* Large decorative logo */}
+          <div className="absolute top-1/2 right-8 -translate-y-1/2 w-48 h-48 lg:w-64 lg:h-64 opacity-10 pointer-events-none">
+            <LogoIcon className="w-full h-full" variant="white" />
           </div>
 
           <div className="relative z-10 max-w-3xl mx-auto">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-medium text-primary-foreground text-balance">
               Ready to automate your salon?
             </h2>
-            <p className="mt-4 text-lg text-primary-foreground/80 max-w-2xl mx-auto">
+            <p className="mt-4 text-lg text-primary-foreground/70 max-w-2xl mx-auto">
               Fill out the salon onboarding form and get instant trial access. Start accepting bookings via Telegram today.
+            </p>
+
+            {/* Bottom tagline */}
+            <p className="mt-6 text-xl text-primary-foreground">
+              More bookings. Fewer no-shows. <span className="text-accent font-medium">Smarter business.</span>
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button 
                 size="lg" 
-                variant="secondary" 
                 asChild 
-                className="w-full sm:w-auto bg-primary-foreground text-primary hover:bg-primary-foreground/90"
+                className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90"
               >
                 <Link href="/salon-questionnaire">
                   Start Free Trial
@@ -48,13 +52,13 @@ export function CTA() {
                 asChild 
                 className="w-full sm:w-auto border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
               >
-                <Link href="https://t.me/bookvsflow_bot" target="_blank" rel="noopener noreferrer">
+                <Link href="https://t.me/bookvsflow" target="_blank" rel="noopener noreferrer">
                   Try Demo Bot
                 </Link>
               </Button>
             </div>
 
-            <p className="mt-6 text-sm text-primary-foreground/60">
+            <p className="mt-6 text-sm text-primary-foreground/50">
               No credit card required. 14-day free trial.
             </p>
           </div>

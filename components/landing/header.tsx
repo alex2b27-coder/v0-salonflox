@@ -4,6 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
 import { Button } from "@/components/ui/button"
+import { Logo } from "@/components/brand/logo"
 import { Menu, X } from "lucide-react"
 
 export function Header() {
@@ -20,16 +21,13 @@ export function Header() {
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border"
+      className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border"
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">B</span>
-            </div>
-            <span className="font-semibold text-lg text-foreground">BookVSFlow</span>
+          <Link href="/" className="flex items-center">
+            <Logo size="sm" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -50,9 +48,9 @@ export function Header() {
             <Button variant="ghost" size="sm" asChild>
               <Link href="/salon-questionnaire">Get Started</Link>
             </Button>
-            <Button size="sm" asChild>
-              <Link href="https://t.me/bookvsflow_bot" target="_blank" rel="noopener noreferrer">
-                Open Telegram Bot
+            <Button size="sm" asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
+              <Link href="https://t.me/bookvsflow" target="_blank" rel="noopener noreferrer">
+                @bookvsflow
               </Link>
             </Button>
           </div>
@@ -92,9 +90,9 @@ export function Header() {
                   <Button variant="outline" size="sm" asChild className="w-full">
                     <Link href="/salon-questionnaire">Get Started</Link>
                   </Button>
-                  <Button size="sm" asChild className="w-full">
-                    <Link href="https://t.me/bookvsflow_bot" target="_blank" rel="noopener noreferrer">
-                      Open Telegram Bot
+                  <Button size="sm" asChild className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
+                    <Link href="https://t.me/bookvsflow" target="_blank" rel="noopener noreferrer">
+                      @bookvsflow
                     </Link>
                   </Button>
                 </div>

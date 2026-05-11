@@ -51,7 +51,7 @@ const features = [
 
 export function Features() {
   return (
-    <section id="features" className="py-20 lg:py-32 bg-secondary/50">
+    <section id="features" className="py-20 lg:py-28 bg-secondary/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -77,10 +77,10 @@ export function Features() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.05 }}
-              className="group bg-card rounded-2xl p-6 border border-border hover:border-accent/30 hover:shadow-lg transition-all duration-300"
+              className="group bg-card rounded-lg p-6 border border-border hover:border-accent/30 hover:shadow-lg transition-all duration-300"
             >
-              <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
-                <feature.icon className="w-6 h-6 text-accent" />
+              <div className="w-12 h-12 rounded-full border border-accent/50 flex items-center justify-center mb-4 group-hover:border-accent transition-colors">
+                <feature.icon className="w-5 h-5 text-accent" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">{feature.title}</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">{feature.description}</p>
